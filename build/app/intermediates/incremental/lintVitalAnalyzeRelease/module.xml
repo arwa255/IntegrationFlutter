@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="C:\Users\Arwa Ali\Desktop\Flutter-master\Flutter-master\android\app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    agpVersion="8.1.0"
+    buildFolder="C:\Users\Arwa Ali\Desktop\Flutter-master\Flutter-master\build\app"
+    bootClassPath="C:\Users\Arwa Ali\AppData\Local\Android\sdk\platforms\android-34\android.jar;C:\Users\Arwa Ali\AppData\Local\Android\sdk\build-tools\33.0.1\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
