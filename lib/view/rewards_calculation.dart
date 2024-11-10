@@ -26,7 +26,7 @@ class _RewardsCalculationState extends State<RewardsCalculation> {
           'Rewards Calculation',
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 17, 2, 43),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -38,7 +38,7 @@ class _RewardsCalculationState extends State<RewardsCalculation> {
               style: TextStyle(
                 fontSize: 26,
                 fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
+                color: const Color.fromARGB(255, 3, 90, 10),
               ),
             ),
             SizedBox(height: 20),

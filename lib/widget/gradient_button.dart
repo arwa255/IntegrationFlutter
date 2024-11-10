@@ -7,7 +7,7 @@ class GradientButton extends StatelessWidget {
   const GradientButton({
     Key? key,
     required this.text,
-    required this.onPressed,
+    required this.onPressed, required List<Color> colors,
   }) : super(key: key);
 
   @override

@@ -27,27 +27,25 @@ class _HomeScreenState extends State<HomeScreen> {
     final rewardsViewModel = Provider.of<RewardsViewmodel>(context);
 
     return Scaffold(
-      appBar:AppBar(
-        title: Text(
+      appBar: AppBar(
+        title: const Text(
           'Staking & Rewards',
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color(0xFF001F54), // Dark blue color
         actions: [
-          // Display grand total in the AppBar
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
             child: Row(
               children: [
                 Text(
                   '${rewardsViewModel.totalRewards?.grandTotal ?? 0}',
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 IconButton(
-                  icon: Icon(Icons.info_outline),
+                  icon: const Icon(Icons.info_outline),
                   color: Colors.white,
                   onPressed: () {
-                    // Navigate to Rewards Screen with total rewards data
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -55,7 +53,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           totalBase: (rewardsViewModel.totalRewards?.totalBase ?? 0).toInt(),
                           totalBonus: (rewardsViewModel.totalRewards?.totalBonus ?? 0).toInt(),
                           grandTotal: (rewardsViewModel.totalRewards?.grandTotal ?? 0).toInt(),
-
                         ),
                       ),
                     );
@@ -66,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+      backgroundColor: const Color(0xFF001B3A), // Darker blue background
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -79,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     BoxShadow(
                       color: Colors.black.withOpacity(0.2),
                       blurRadius: 10,
-                      offset: Offset(0, 5),
+                      offset: const Offset(0, 5),
                     ),
                   ],
                 ),
@@ -91,21 +89,23 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 30),
-              // Using GradientButton for each action
-              GradientButton(text: 'Staking Options', onPressed: ()
-              {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const StakingOptions(),
-                  ),
-                );
-              },
+              const SizedBox(height: 30),
+              GradientButton(
+                text: 'Staking Options',
+                colors: [Colors.green[400]!, Colors.green[700]!], // Green gradient
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const StakingOptions(),
+                    ),
+                  );
+                },
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               GradientButton(
                 text: 'Yield Tracking',
+                colors: [const Color.fromARGB(255, 12, 114, 17)!, const Color.fromARGB(255, 5, 49, 7)!], // Green gradient
                 onPressed: () {
                   Navigator.push(
                     context,

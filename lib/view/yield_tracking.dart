@@ -24,7 +24,7 @@ class _YieldTrackingScreenState extends State<YieldTrackingScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 0, 43, 9),
         title: Text(
           'Yield Tracking',
           style: TextStyle(
@@ -45,7 +45,7 @@ class _YieldTrackingScreenState extends State<YieldTrackingScreen> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(
-                colors: [Colors.deepPurple, Colors.purpleAccent],
+                colors: [const Color.fromARGB(255, 8, 75, 36), const Color.fromARGB(255, 1, 75, 26)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),

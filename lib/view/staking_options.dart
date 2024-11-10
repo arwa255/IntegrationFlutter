@@ -29,7 +29,7 @@ class _StakingOptionsState extends State<StakingOptions> {
           'Staking Options',
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 2, 44, 5),
       ),
       body: Center(
         child: Padding(
@@ -64,7 +64,7 @@ class _StakingOptionsState extends State<StakingOptions> {
                   style: TextStyle(fontSize: 18, color: Colors.black), // Set selected text color to black
                   underline: Container(
                     height: 2,
-                    color: Colors.deepPurple,
+                    color: const Color.fromARGB(255, 0, 0, 0),
                   ),
                   iconEnabledColor: Colors.black, // Change the dropdown icon color to black
                 ),
@@ -103,7 +103,7 @@ class _StakingOptionsState extends State<StakingOptions> {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text('Please enter a valid amount.'),
-                            backgroundColor: Colors.red,
+                            backgroundColor: const Color.fromARGB(255, 3, 151, 3),
                           ),
                         );
                         return;
@@ -133,7 +133,7 @@ class _StakingOptionsState extends State<StakingOptions> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
+                    backgroundColor: const Color.fromARGB(255, 18, 141, 7),
                     padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                     textStyle: TextStyle(fontSize: 20),
                   ),

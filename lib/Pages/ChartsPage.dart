@@ -53,7 +53,7 @@ class _ChartsPageState extends State<ChartsPage> {
     debugPrint('here');
     try {
       final response = await http.get(
-        Uri.parse('http://10.0.2.2:3001/api/crypto/$crypto'),
+        Uri.parse('http://10.10.0.138:3000/api/crypto/$crypto'),
       );
 
       if (response.statusCode == 200) {

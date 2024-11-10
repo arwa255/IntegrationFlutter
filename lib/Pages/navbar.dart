@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Pages/ChartsPage.dart';
 import 'package:flutter_app/Pages/EditAccount.dart';
 import 'package:flutter_app/Pages/mywallet.dart';
 import 'package:flutter_app/Pages/wallet.dart';
@@ -25,11 +26,11 @@ class _NavbarPageState extends State<NavbarPage> {
     _pages.addAll([
       EditAccount(),
       MyWalletPage(userId: widget.userId),
+      ChartsPage(),
       Wallet(),
-      HomeScreen(),
-     // TradingPage(userId: widget.userId),
-      //StakingPage(userId: widget.userId),
-    ]);
+      Wallet(),
+     
+      HomeScreen(),    ]);
   }
 
   @override
