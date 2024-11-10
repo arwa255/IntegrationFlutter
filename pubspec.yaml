@@ -39,6 +39,8 @@ dependencies:
   provider: ^6.1.2
   shared_preferences: ^2.3.3
   flutter_dotenv: ^5.2.1
+  interactive_chart: ^0.3.5
+  fl_chart: ^0.69.0
 
 dev_dependencies:
   flutter_test:

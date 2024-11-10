@@ -4,7 +4,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
@@ -30,6 +30,9 @@ app.use('/api/order', orderRoutes);
 
 const stakingRoutes = require('./routes/StakingRoute');
 app.use("/staking", stakingRoutes);
+
+const analyticsRoutes = require('./routes/analyticsRoutes');
+app.use('/api/crypto', analyticsRoutes);
 
 app.use((err, req, res, next) => {
   console.error(`Error occurred during ${req.method} ${req.url}:`, err);
